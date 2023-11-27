@@ -1,0 +1,31 @@
+-- use adbms;
+-- create table employee(
+-- 	e_name varchar(30),
+--     e_id int primary key,
+--     e_desig varchar(30),
+--     e_depart varchar(30),
+--     e_contact numeric
+-- );
+
+-- insert into employee  values("Lakshit",6588,"Manager","Developer",9876543210);
+-- INSERT INTO employee VALUES ("John", 1234, "Supervisor", "Designer", 1234567890);
+-- INSERT INTO employee VALUES ("Emily", 5678, "Coordinator", "Analyst", 9876543201);
+-- INSERT INTO employee VALUES ("Michael", 9012, "Manager", "Engineer", 5551234567);
+-- INSERT INTO employee VALUES ("Sophia", 3456, "Supervisor", "Programmer", 7890123456);
+-- INSERT INTO employee VALUES ("William", 7890, "Coordinator", "Tester", 9012345678);
+-- INSERT INTO employee VALUES ("Olivia", 2345, "Manager", "Architect", 2345678901);
+-- INSERT INTO employee VALUES ("James", 6789, "Supervisor", "Administrator", 6789012345);
+-- INSERT INTO employee VALUES ("Emma", 0123, "Coordinator", "Analyst", 8901234567);
+-- INSERT INTO employee VALUES ("Alex", 4567, "Manager", "Developer", 1234509876);
+select * from employee;
+-- create role lakshit;
+-- drop role lakshit;
+
+-- drop user lakshit;
+-- create user 'lakshit' identified by 'root'; 
+-- use adbms;
+-- -- savepoint s1;
+-- grant select,update,insert on employee to 'lakshit';
+-- savepoint s2;
+-- revoke select,update,insert on employee from 'lakshit';
+-- commit;
